@@ -5,10 +5,9 @@
  */
 var maximizeSum = function(nums, k) {
   let maxNum = Math.max(...nums)
-  let answer = 0
+  let answer = k * (maxNum)
   for (let i = 0; i < k; i++) {
-    answer = answer + maxNum
-    maxNum+=1
+    answer+=i
   }
   return answer
 };
